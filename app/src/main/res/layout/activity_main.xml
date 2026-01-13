@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_space"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="end"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="#00E5FF"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button style="@style/SpaceButton" android:text="C" android:id="@+id/btnC" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="/" android:id="@+id/btnDiv" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="x" android:id="@+id/btnMult" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="DEL" android:id="@+id/btnDel" android:layout_columnWeight="1" />
+
+        <Button style="@style/SpaceButton" android:text="7" android:id="@+id/btn7" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="8" android:id="@+id/btn8" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="9" android:id="@+id/btn9" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="-" android:id="@+id/btnSub" android:layout_columnWeight="1" />
+
+        <Button style="@style/SpaceButton" android:text="4" android:id="@+id/btn4" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="5" android:id="@+id/btn5" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="6" android:id="@+id/btn6" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="+" android:id="@+id/btnAdd" android:layout_columnWeight="1" />
+
+        <Button style="@style/SpaceButton" android:text="1" android:id="@+id/btn1" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="2" android:id="@+id/btn2" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="3" android:id="@+id/btn3" android:layout_columnWeight="1" />
+        <Button style="@style/SpaceButton" android:text="=" android:id="@+id/btnEqual" android:layout_gravity="fill" android:layout_rowSpan="2" android:backgroundTint="#00E5FF" android:textColor="#000000" />
+
+        <Button style="@style/SpaceButton" android:text="0" android:id="@+id/btn0" android:layout_columnSpan="2" android:layout_columnWeight="2" android:layout_gravity="fill" />
+        <Button style="@style/SpaceButton" android:text="." android:id="@+id/btnDot" android:layout_columnWeight="1" />
+
+    </GridLayout>
+</RelativeLayout>
